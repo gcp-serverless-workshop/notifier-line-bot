@@ -1,0 +1,39 @@
+{
+  "name": "notifier-line",
+  "env": {
+    "LINE_CHANNEL_SECRET": {
+      "description": "LINE Bot secret key",
+      "value": "ooooooo",
+      "required": true
+    },
+    "LINE_CHANNEL_ACCESS_TOKEN": {
+      "description": "LINE Bot access key",
+      "value": "xxxxxxxx",
+      "required": true
+    },
+    "API_ENV": {
+      "value": "production",
+      "required": true
+    },
+    "LOG": {
+      "description": "Log level",
+      "value": "INFO"
+    },
+    "GOOGLE_CLOUD_PROJECT": {
+      "description": "Google cloud project name",
+      "value": "xxxx"
+    },
+    "LINE_GROUP_ID": {
+      "description": "LINE Group id for testing",
+      "value": "abc123456"
+    }
+  },
+  "options": {
+    "allow-unauthenticated": true,
+    "memory": "512Mi",
+    "cpu": "1",
+    "http2": false,
+    "concurrency": 10,
+    "max-instances": 5
+  }
+}
